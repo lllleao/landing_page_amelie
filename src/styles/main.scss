@@ -1,0 +1,31 @@
+@use 'variaveis';
+@use 'header';
+@use 'about';
+@use 'cast';
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: variaveis.$corDeFundoPrincipal;
+}
+
+.generic-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 62px;
+    font-family: serif;
+    font-size: 32px;
+    color: variaveis.$corTextoPrincipal;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 5px;
+}
