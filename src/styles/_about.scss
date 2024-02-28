@@ -49,6 +49,7 @@
                 text-align: justify;
                 text-shadow: 1px 1px 1px #000;
                 transition: transform .5s ease;
+                animation: animationAbountText .3s ease;
             }
         
             &__image {
@@ -62,5 +63,14 @@
                 }
             }
         }
+    }
+}
+
+@keyframes animationAbountText {
+    0% {
+        transform: translateX(400px);
+    }
+    100% {
+        transform: translateX(none);
     }
 }

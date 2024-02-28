@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.sound {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__music {
+        video {
+            cursor: pointer;
+            width: 650px;
+            object-fit: contain;
+        }
+    }
+
+    &__about {
+        max-width: 750px;
+
+        .subtitle {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            color: variaveis.$corTextoPrincipal;
+            font-size: 22px;
+            font-family: serif;
+            text-align: justify;
+            text-shadow: 1px 1px 1px #000;
+            line-height: 40px;
+        }
+    }
+}
