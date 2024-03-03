@@ -7,12 +7,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    @media (min-width: 1024px) and (max-width: 1457px) {
+        height: 100%;
+        padding-bottom: 50vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 100%;
+        width: 90%;
+        padding-bottom: 50vh;
+    }
+
+    @media (max-width: 767px) {
+        height: 100%;
+        width: 90%;
+        padding: 40vw 0;
+    }
 
     &__list {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 64px;
+
+        @media (min-width: 1024px) and (max-width: 1457px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+            .cast__list__item {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
 
         &__item {
             position: relative;

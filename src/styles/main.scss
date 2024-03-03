@@ -3,6 +3,8 @@
 @use 'about';
 @use 'cast';
 @use 'sound';
+@use 'tell';
+@use 'footer';
 
 *,
 ::after,
@@ -19,6 +21,14 @@ body {
 .generic-container {
     max-width: 1500px;
     margin: 0 auto;
+
+    @media (min-width: 1024px) and (max-width: 1457px) {
+        width: 90%;
+    }
+
+    @media (max-width: 1023px) {
+        width: 90%;
+    }
 }
 
 .subtitle {
@@ -29,4 +39,7 @@ body {
     color: variaveis.$corTextoPrincipal;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: 5px;
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }

@@ -3,19 +3,50 @@
 .sound {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 1457px) {
+        height: 100%;
+        padding-bottom: 30vw;
+    }
+
+    @media (max-width: 767px) {
+        height: 100%;
+        padding-bottom: 40vw;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        @media (max-width: 1457px) {
+            display: block;
+        }
+    }
+
 
     &__music {
-        video {
-            cursor: pointer;
-            width: 650px;
-            object-fit: contain;
+        box-shadow: variaveis.$sombraDaCaixa;
+        cursor: pointer;
+        max-width: 650px;
+        width: 100%;
+        object-fit: contain;
+        
+        @media (max-width: 1457px) {
+            display: block;
+            margin: 32px auto;
         }
     }
 
     &__about {
         max-width: 750px;
+
+        @media (max-width: 1457px) {
+            display: block;
+            margin: 0 auto;
+        }
 
         .subtitle {
             margin-bottom: 40px;

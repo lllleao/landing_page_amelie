@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,31 +15,42 @@
         rel="stylesheet">
     <title>O Fabuloso Destino de Amelie Poulain</title>
 </head>
+
 <body>
-    <header class="header generic-container">
-        <h1 class="header__title">
-            <a href="#">
-                O Fabuloso Destino de Amelie Poulain
-            </a>
-        </h1>
-        <nav>
-            <ul class="header__list">
-                <li class="header__list__item">
-                    <a href="#about">Sobre o filme</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="#cast">Elenco</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="#sound">Trilha sonora</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header header--is-hidden">
+        <div class="container generic-container">
+            <h1 class="header__title">
+                <a href="#">
+                    O Fabuloso Destino de Amelie Poulain
+                </a>
+            </h1>
+            <nav class="header__dropdown">
+                <div></div>
+                <div></div>
+                <div></div>
+            </nav>
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a href="#about">Sobre o filme</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#cast">Elenco</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#sound">Trilha sonora</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#tell">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="about" id="about">
             <div class="about__image">
-                <img class="about__image__wallpapper" src="imgs/menssageamelie.jpg" alt="">
+                <img class="about__image__wallpapper" src="../dist/imgs/menssageamelie.jpg" alt="Papel com mensagem escrita">
             </div>
             <div class="about__container generic-container">
                 <h2 class="subtitle">Sobre o filme</h2>
@@ -55,7 +67,7 @@
                         visão do mundo. Então, a partir de pequenos gestos, ela passa a ajudar as pessoas que a rodeiam,
                         vendo nisto um novo sentido para sua existência. Contudo, ainda sente falta de um grande amor.
                     </p>
-                    <img class="about__container__animation__image" src="imgs/amelie.jpg" alt="">
+                    <img class="about__container__animation__image" src="../dist/imgs/amelie.jpg" alt="Mulher sorrindo e segurando um guarda-chuva">
                 </div>
             </div>
         </section>
@@ -64,65 +76,123 @@
             <ul class="cast__list">
                 <li class="cast__list__item">
                     <img class="cast__list__item__img"
-                        src="https://media.fstatic.com/dPALUyLfuXXBys49OyQ023mK-AI=/full-fit-in/290x478/filters:format(webp)/media/artists/avatar/2023/04/audrey-tautou_a58423.jpg"
-                        alt="">
+                        src="../dist/imgs/audreyTautou.jpg"
+                        alt="Mulher sorrindo">
                     <h3 class="cast__list__item__title">
                         Audrey Tautou <br>
                         (Amelie Poulain)
                     </h3>
                     <span>
-                        <img src="icons/clapperboard2.png" alt="">
+                        <img src="../dist/imgs/icons/clapperboard2.png" alt="Icone de claquete">
                     </span>
                 </li>
                 <li class="cast__list__item">
                     <img class="cast__list__item__img"
-                        src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/73784_v9_bc.jpg"
-                        alt="">
+                        src="../dist/imgs/mathieuKassovitz.jpg"
+                        alt="Homem sorrindo">
                     <h3 class="cast__list__item__title">
                         Mathieu Kassovitz <br>
                         (Nino Quincampoix)
                     </h3>
                     <span>
-                        <img src="icons/clapperboard2.png" alt="">
+                        <img src="../dist/imgs/icons/clapperboard2.png" alt="Icone de claquete">
                     </span>
                 </li>
                 <li class="cast__list__item">
                     <img class="cast__list__item__img"
-                        src="https://media.themoviedb.org/t/p/w500/aC6rEJrBgCNjeG6vetJPBdgj5h3.jpg" alt="">
+                        src="../dist/imgs/rufus.jpg" alt="Homem sorrindo">
                     <h3 class="cast__list__item__title">
                         Rufus <br>
                         (Raphaël Poulain)
                     </h3>
                     <span>
-                        <img src="icons/clapperboard2.png" alt="">
+                        <img src="../dist/imgs/icons/clapperboard2.png" alt="Icone de claquete">
                     </span>
                 </li>
                 <li class="cast__list__item">
                     <img class="cast__list__item__img"
-                        src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/173721_v9_bb.jpg"
-                        alt="">
+                        src="../dist/imgs/jamelDebbouze.jpg"
+                        alt="Homem sorrindo">
                     <h3 class="cast__list__item__title">
                         Jamel Debbouze <br>
                         (Lucien)
                     </h3>
                     <span>
-                        <img src="icons/clapperboard2.png" alt="">
+                        <img src="../dist/imgs/icons/clapperboard2.png" alt="Icone de claquete">
                     </span>
                 </li>
             </ul>
         </section>
         <section class="sound generic-container" id="sound">
-            <div class="sound__music">
-                <video controls poster="imgs/music-wlpp.jpg" src="video/Comptine d'un Autre Été - Yann Tiersen - TheChiefEmperor.mp4"></video>
-            </div>
+            <h2 class="subtitle">Trilha sonora</h2>
+            <div class="container">
+                <video class="sound__music" controls poster="../dist/imgs/music-wlpp.jpg"
+                src="video/Comptine d'un Autre Été - Yann Tiersen - TheChiefEmperor.mp4"></video>
             <div class="sound__about">
-                <h2 class="subtitle">Comptine d'un Autre été</h2>
+                <h3 class="subtitle">Comptine d'un Autre été</h3>
                 <p class="sound__about__text">
-                    <strong>Comptine d'un Autre été (Cantiga Infantil de Outro Verão)</strong> é uma música do compositor e pianista Yann Tiersen. Foi uma canção composta especialmente para o filme "O Fabuloso Destino de Amélie Poulain". Essa é uma cansão que, pessoalmente, tenho dificuldade de descrever, ela pode inspirar tristeza, alegria e catarse. Foi a primeira música instrumental que me fez chorar. Em certos momentos, lenta e melancólica, em outros, viva e agitada, essa é uma música que é capaz de te fazer viajar por partes bem profundas do seu eu, e quando você volta... já não é mais o mesmo.
+                    <strong>Comptine d'un Autre été (Cantiga Infantil de Outro Verão)</strong> é uma música do
+                    compositor e pianista Yann Tiersen. Foi uma canção composta especialmente para o filme "O Fabuloso
+                    Destino de Amélie Poulain". Essa é uma cansão que, pessoalmente, tenho dificuldade de descrever, ela
+                    pode inspirar tristeza, alegria e catarse. Foi a primeira música instrumental que me fez chorar. Em
+                    certos momentos, lenta e melancólica, em outros, viva e agitada, essa é uma música que é capaz de te
+                    fazer viajar por partes bem profundas do seu eu, e quando você volta... já não é mais o mesmo.
                 </p>
+            </div>
+            </div>
+        </section>
+        <section class="tell generic-container" id="tell">
+            <h2 class="subtitle">Fale conosco</h2>
+            <div class="container">
+                <form class="tell__form">
+                    <label class="tell__form__label" for="name">Nome</label>
+                    <input class="tell__form__input-field" type="text" id="name" placeholder="nome" required>
+                    <label class="tell__form__label" for="email">Email</label>
+                    <input class="tell__form__input-field" type="email" id="email" placeholder="exemplo@email.com" required>
+                    <label class="tell__form__label" for="tel">Telefone</label>
+                    <input class="tell__form__input-field" type="tel" id="tel">
+                    <label class="tell__form__label" for="opinion">Sua opinião</label>
+                    <textarea class="tell__form__input-field" id="opinion" placeholder="Muito bom o filme!"
+                        required></textarea>
+                    <button type="submit" class="tell__form__button">Enviar</button>
+                </form>
+                <ul class="tell__social-links">
+                    <a href="http://instagram.com/lucas.lllll" target="_blank">
+                        <li class="tell__social-links__link">
+                            <div class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <span class="icon-text">Instagram</span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/lllleao" target="_blank">
+                        <li class="tell__social-links__link">
+                            <div class="icon">
+                                <i class="icon fa-brands fa-github"></i>
+                            </div>
+                            <span class="icon-text">Github</span>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-le%C3%A3o-lima/" target="_blank">
+                        <li class="tell__social-links__link">
+                            <div class="icon">
+                                <i class="icon fa-brands fa-linkedin"></i>
+                            </div>
+                            <span class="icon-text">Linkedin</span>
+                        </li>
+                    </a>
+                </ul>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <p class="generic-container footer__text">Todos os direitos reservados a Lucas Leão &copy; - 2024</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/58ea2f345c.js" crossorigin="anonymous"></script>
     <script src="../dist/scripts/main.js"></script>
 </body>
 </html>

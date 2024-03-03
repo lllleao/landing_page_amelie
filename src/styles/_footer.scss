@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+.footer {
+    text-align: center;
+    background-color: #161000;
+    &__text {
+        padding: 16px 0;
+        color: variaveis.$corTextoPrincipal;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+}

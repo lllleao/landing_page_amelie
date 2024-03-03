@@ -1,15 +1,54 @@
 @use 'variaveis';
 
 .header {
-    font-family: "Kaushan Script", cursive;
     padding: 1vw 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
 
-    .header__title {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Kaushan Script", cursive;
+
+        @media (max-width: 1457px) {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    }
+
+
+    &__dropdown {
+        display: none;
+        margin-top: 12px;
+        @media (max-width: 767px) {
+            display: block;
+        }
+        div {
+            width: 40px;
+            height: 5px;
+            background-color: #eee;
+            border-radius: 50px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    &__title {
+
+        @media (min-width: 768px) {
+            margin-bottom: 12px;
+        }
+
         a {
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
             font-size: 32px;
             color: variaveis.$corTextoPrincipal;
             font-weight: normal;
@@ -19,7 +58,32 @@
         }
     }
 
-    .header__list {
+    &__navbar {
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 95px;
+            background-color: #3B3100;
+            width: 100vw;
+            overflow: hidden;
+            height: 0;
+            transition-property: height, padding;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+
+            &--is-open {
+                height: 188px;
+                padding: 12px;
+            }
+
+            .header__list__item {
+                display: block;
+                text-align: center;
+                margin-bottom: 18px;
+            }
+        }
+    }
+    
+    &__list {
         &__item {
             display: inline;
             padding-left: 8px;
