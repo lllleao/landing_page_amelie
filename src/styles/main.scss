@@ -24,6 +24,7 @@ body {
 
 .generic-container {
     max-width: 1500px;
+    width: 95%;
     margin: 0 auto;
 
     @media (min-width: 1024px) and (max-width: 1457px) {

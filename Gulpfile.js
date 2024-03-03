@@ -23,3 +23,7 @@ function images() {
 }
 
 exports.default = gulp.parallel(styles, scripts, images)
+exports.watch = function() {
+    gulp.watch('./src/styles/*.scss', gulp.series(styles, scripts))
+    gulp.watch('./src/scripts/*.js', gulp.series(styles, scripts))
+}

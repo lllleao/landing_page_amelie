@@ -49,7 +49,7 @@
             align-items: center;
             justify-content: space-around;
 
-            @media (max-width: 1457px) {
+            @media (min-width: 1024px) and (max-width: 1457px) {
                 display: flex;
                 flex-direction: column-reverse;
                 width: 90%;
@@ -61,7 +61,37 @@
                 }
             
                 .about__container__animation__image {
+                    max-width: 70%;
+                    animation-name: none;
+                    margin-bottom: 32px;
+                }
+
+                .about__container__animation--is-showing {
+                    .about__container__animation__text {
+                        transform: none;
+                    }
+                    .about__container__animation__image {
+                        transform: none;
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 1023px) {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 90%;
+                margin: 0 auto;
+
+                .about__container__animation__text {
                     max-width: 100%;
+                    animation: none;
+                }
+            
+                .about__container__animation__image {
+                    max-width: 70%;
                     animation-name: none;
                     margin-bottom: 32px;
                 }
