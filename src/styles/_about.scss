@@ -4,14 +4,14 @@
     padding-top: 78px;
     padding-bottom: 20vh;
 
-    @media (min-width: 768px) and (max-width: 1457px) {
-        padding-top: 90px;
-        padding-bottom: 40vh;
-    }
-    
     @media (max-width: 767px) {
         padding-top: 90px;
         padding-bottom: 10vh;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1457px) {
+        padding-top: 90px;
+        padding-bottom: 40vh;
     }
 
     &__image {
@@ -78,6 +78,7 @@
                     }
                 }
             }
+            
 
             @media (max-width: 1023px) {
                 display: flex;
@@ -91,7 +92,7 @@
                 }
             
                 .about__container__animation__image {
-                    max-width: 70%;
+                    max-width: 85%;
                     animation-name: none;
                     margin-bottom: 32px;
                 }
